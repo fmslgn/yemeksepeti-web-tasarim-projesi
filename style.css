@@ -1,0 +1,422 @@
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif; /* Genel yazı tipi ailesi */
+  background: #fff; /* Sayfa arka plan rengi */
+  color: #222; /* Varsayılan metin rengi */
+}
+
+.header {
+  background: #fff; /* Üst menü arka planı */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* Hafif gölge efekti */
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  color: #ea580c; /* Logo rengi */
+  font-size: 2rem; /* Logo yazı boyutu */
+  font-weight: bold;
+}
+.nav a {
+  color: #444; /* Menü link rengi */
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.nav a:hover {
+  color: #ea580c; /* Menü linki üzerine gelince renk değişimi */
+}
+.hero {
+  background: linear-gradient(135deg, #f97316 0%, #dc2626 100%); /* Hero alanı degrade arka plan */
+  color: #fff;
+  text-align: center;
+  padding: 64px 16px 48px 16px;
+  position: relative;
+}
+.hero .highlight {
+  color: #fde047; /* Vurgulu metin rengi */
+  display: block;
+}
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 32px;
+  opacity: 0.95;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto 24px auto;
+  max-width: 600px;
+}
+.search-bar input {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  outline: none;
+}
+.search-bar button {
+  background: #ea580c; /* Arama butonu arka planı */
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 32px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.search-bar button:hover {
+  background: #c2410c; /* Buton hover rengi */
+  transform: scale(1.05);
+}
+.footer {
+  background: #111827; /* Alt bilgi arka planı */
+  color: #fff;
+  text-align: center;
+  padding: 32px 0 16px 0;
+  margin-top: 48px;
+  font-size: 1rem;
+}
+
+.categories {
+  background: #f9fafb; /* Kategori alanı arka planı */
+  padding: 48px 0 32px 0;
+  text-align: center;
+}
+.categories h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 24px;
+}
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.category {
+  background: #fff7ed; /* Kategori kutusu arka planı */
+  color: #ea580c;
+  border-radius: 16px;
+  padding: 18px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.category:hover {
+  transform: scale(1.07);
+  box-shadow: 0 4px 16px rgba(234,88,12,0.10);
+}
+
+.popular-foods {
+  background: #fff;
+  padding: 48px 0 32px 0;
+  text-align: center;
+}
+.popular-foods h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 24px;
+}
+.food-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.food-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  overflow: hidden;
+  width: 220px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.food-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(234,88,12,0.10);
+}
+.food-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.food-info {
+  padding: 16px 12px 12px 12px;
+  text-align: left;
+}
+.food-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+}
+.food-restaurant {
+  color: #ea580c;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+.food-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+.food-original-price {
+  color: #888;
+  text-decoration: line-through;
+  font-size: 0.95rem;
+  margin-left: 6px;
+}
+
+.featured-restaurants {
+  background: #f9fafb; /* Öne çıkan restoranlar arka planı */
+  padding: 48px 0 32px 0;
+  text-align: center;
+}
+.featured-restaurants h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 24px;
+}
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.restaurant-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  overflow: hidden;
+  width: 220px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.restaurant-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(234,88,12,0.10);
+}
+.restaurant-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.restaurant-info {
+  padding: 16px 12px 12px 12px;
+  text-align: left;
+}
+.restaurant-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+}
+.restaurant-cuisine {
+  color: #ea580c;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+.restaurant-rating {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.features {
+  background: #fff;
+  padding: 48px 0 32px 0;
+  text-align: center;
+}
+.features h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 24px;
+}
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+.feature {
+  background: #f3f4f6; /* Özellik kutusu arka planı */
+  border-radius: 16px;
+  padding: 28px 32px;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.feature-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ea580c;
+  margin-bottom: 6px;
+}
+.feature-desc {
+  color: #444;
+  font-size: 0.98rem;
+}
+
+.cities {
+  padding: 32px 0 32px 0;
+  text-align: center;
+}
+.cities h2 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+.city-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+.city-card {
+  position: relative;
+  width: 340px;
+  height: 240px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.city-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(234,88,12,0.10);
+}
+.city-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.city-label {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: #fff;
+  color: #222;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 8px 22px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.city-hero {
+  background: #f3f4f6; /* Şehir detay sayfası üst alanı */
+  padding: 48px 0 32px 0;
+  text-align: center;
+}
+.city-hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 600;
+  margin: 0;
+}
+.breadcrumb {
+  margin: 24px 0 0 40px;
+  font-size: 1.1rem;
+  color: #888;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.breadcrumb a {
+  color: #ea580c;
+  text-decoration: none;
+  font-weight: 500;
+}
+.city-rest-title {
+  font-size: 2rem;
+  color: #222;
+  margin: 32px 0 24px 40px;
+  text-align: left;
+}
+.city-rest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+.city-rest-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  overflow: hidden;
+  width: 340px;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.city-rest-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(234,88,12,0.10);
+}
+.city-rest-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+.city-rest-info {
+  padding: 16px 18px 12px 18px;
+  text-align: left;
+}
+.city-rest-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+}
+.city-rest-desc {
+  color: #888;
+  font-size: 0.98rem;
+  margin-bottom: 6px;
+}
+.city-rest-rating {
+  color: #ea580c;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.star {
+  color: #ea580c;
+  font-size: 1.2rem;
+}
+.city-rest-badges {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 2;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+}
+.badge-red {
+  background: #e11d48; /* Kırmızı rozet arka planı */
+}
+.badge-pink {
+  background: #be185d; /* Pembe rozet arka planı */
+}
