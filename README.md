@@ -54,9 +54,7 @@ Arayüz tasarımı, temel frontend yapısı ve kullanıcı deneyimi üzerine ça
 
 ## Ekran Görüntüsü
 
-Projeye ait ekran görüntüsünü bu alana ekleyebilirsiniz.
-
-Örnek kullanım:
+Projenin ana sayfa görünümü aşağıda yer almaktadır.
 
 ![Ana Sayfa](assets/ana-sayfa.png)
 
